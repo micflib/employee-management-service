@@ -1,0 +1,21 @@
+info:
+    name: @project.name@
+    team: proj
+    version: @project.version@
+    servicename: employee-management-service
+
+spring:
+    #Use this to befriend spring-boot-starter-actuator & springfox-boot-starter
+    mvc:
+        pathmatch:
+            matching-strategy: ANT_PATH_MATCHER
+    kafka:
+        topic-name: employee-management-events
+
+server:
+    port: 8088
+    error:
+        include-message: always
+        include-binding-errors: always
+        include-stacktrace: on_param
+        include-exception: true

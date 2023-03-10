@@ -1,0 +1,12 @@
+#
+# SERVICE CONFIGURATION FOR LOCAL DEVELOPMENT
+#
+spring:
+  data:
+      mongodb:
+          uri: mongodb://root:password@localhost:27011/
+          database: employee-management-service
+          auto-index-creation: true
+
+  kafka:
+    bootstrap-servers: localhost:9092
